@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<!--
+⣿⣿⣿⣿⣿⣿⣿⢟⠫⠓⠚⠉⠙⠓⠫⢻⠿⣟⠿⠭⠩⠛⡻⣿⣿⣿⣿⣿⣿⣿
+⣿⣿⣿⣿⣿⢟⠕⠁⣠⠴⠒⠋⠉⢉⣉⣛⣛⣲⣤⣀⠔⠒⠛⢒⣋⣹⣛⣿⣿⣿
+⣿⣿⣿⣿⣏⠎⠀⠀⠀⠀⠤⣖⡫⠝⠒⠂⠀⠀⠐⠺⣷⡲⠭⠛⠓⠒⠚⠫⠬⡻
+⣿⣿⡿⢟⠝⠀⠀⠀⠀⠮⣉⠀⠀⠀⠀⣴⡿⠿⡆⠀⠈⡇⠀⠀⢰⣿⠿⡆⠀⠈
+⣿⠏⠀⠀⠀⠀⠀⠀⠀⠀⠠⡑⢄⠀⠀⠻⠿⠶⠃⠀⢀⡧⢄⡀⠘⠻⠶⠁⠀⣀
+⢧⠃⠀⠀⠀⠀⠀⠀⠀⠀⣄⡈⠓⣯⣖⣲⠤⠤⠴⠶⠯⠽⠦⢾⣿⡭⣬⡤⣩⣾
+⠂⠀⠀⠀⠀⠀⠀⢀⡤⠴⠒⠉⠉⣁⡠⠤⠤⠔⠒⠒⠶⠶⠦⠤⢤⣈⣉⠛⢼⣿
+⠀⠀⠀⠀⠀⠀⢰⠁⠠⠴⠒⢋⣉⣠⠤⠴⠖⠒⠚⠛⠛⠛⠛⠛⠒⠲⠮⣭⡓⠯
+⠀⠀⠀⠀⠀⠘⢎⠳⠤⠒⠋⠉⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢙⣳
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠠⣱⣿
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠠⣱⣿⣿
+⣆⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⢀⣴⣿⣿⣿
+⠈⠙⠵⣒⠤⠤⣀⣀⣀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⡀⠀⣔⣮⣶⣿⣿⣿⣿⣿
+⠀⠀⠀⠀⠉⠉⠒⠒⠮⠭⠭⢉⣉⣈⡉⠉⠭⠭⠝⠋⠘⠝⠻⣿⣿⣿⣿⣿⣿⣿
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣮⡻⣿⣿⣿⣿⣿
+住手！
+這是專門提供給開發人員的瀏覽器功能。
+──────▄▌▐▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▌ 
+───▄▄ █   請勿盜取 | @Seife.Tong 
+███████▌█▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▌ 
+▀(@)▀▀▀▀▀▀▀(@)(@)▀▀▀▀▀▀▀▀▀▀▀▀▀(@)▀
+純響應式設計 HTML5 | @Seife.Tong 
+-->
+<html lang="en">
+<head>
+	<base href="/">
+	<meta charset="utf-8">
+	<meta content="IE=edge" http-equiv="X-UA-Compatible"><!-- Status bar colors -->
+	<meta content="yes" name="mobile-web-app-capable">
+	<meta content="yes" name="apple-mobile-web-app-capable">
+	<meta content="Akrapovič" name="apple-mobile-web-app-title">
+	<meta content="width=device-width,initial-scale=1,maximum-scale=1,height=device-height,viewport-fit=cover" name="viewport">
+	<title>Hong Zi Akrapovič</title>
+	<style>
+	      html,
+	      body {
+	       height: 100%;
+	       padding: 0;
+	       margin: 0;
+
+	      }
+
+	      .introLoader hon{
+
+	         }
+
+	      .introLoaderWrapper {
+	       width: 100%;
+	       height: 100%;
+	       position: absolute;
+	       top: 0;
+	       left: 0;
+	       background-image: url(https://i.imgur.com/mjNtbDA.jpg);
+	       background-size: cover;
+	       z-index: 9999;
+	       display: flex;
+	       justify-content: center;
+	       align-items: center;
+	       text-align: center;
+
+	      }
+
+	      .introLoaderWrapper span {
+	         text-align: center;
+	         line-height: 25px;
+	         font-size: 15px;
+	         
+	      }
+
+	      .introLoaderWrapper svg {
+	       max-width: 60px;
+	       width: 100%;
+	      }
+
+	      .introLoaderWrapper svg path#path {
+	       stroke-dasharray: 260;
+	       stroke-dashoffset: 0;
+	       animation: dash 1000ms linear backwards;
+	       opacity: 0;
+	      }
+
+	      .introLoaderWrapper svg path#fill {
+	       animation: appear 250ms 900ms ease forwards, pulse-opacity 2000ms 1150ms  ease infinite;
+	       opacity: 0;
+	      }
+
+	      .removing {
+	         transition: all 750ms ease-out;
+	         opacity: 0;
+	      }
+
+	      @keyframes dash {
+	       0% {
+	         stroke-dashoffset: 260;
+	         opacity: 1;
+	       }
+	       90% {
+	         stroke-dashoffset: 0;
+	         opacity: 1;
+	       }
+	       100% {
+	         opacity: 0;
+	       }
+	      }
+
+	      @keyframes appear {
+	       from {
+	         opacity: 0;
+	       }
+	       to {
+	         opacity: 1;
+	       }
+	      }
+
+	      @keyframes pulse-opacity {
+	       0% {
+	         opacity: 1;
+	       }
+	       20% {
+	         opacity: 1;
+	       }
+	       50% {
+	         opacity: 0.5;
+	       }
+	       80% {
+	         opacity: 1;
+	       }
+	       100% {
+	         opacity: 1;
+	       }
+	      }
+
+	      @media screen{
+	          .hongbg {
+	              padding:10px;background-color:black;
+	              opacity:0.8;
+	          }
+	          .textwan {
+	              background: yellow;
+	              float:left;
+	              width: 100%;
+	          }
+	      }
+	      
+	</style>
+	<script>
+	   var isShow = false;
+	   function show22() {
+	      if(!isShow) {
+	          isShow = true;
+	         document.getElementById('hide22').style.display='';
+	         document.getElementById('show22').innerText = "【一鍵后悔】";
+	     }
+	     else {
+	         isShow = false;
+	         document.getElementById('hide22').style.display='none';
+	         document.getElementById('show22').innerText = "【此群已被屏蔽，點擊卍解！】";
+	     }
+	   }       
+	</script>
+</head>
+<body>
+	<div class="introLoaderWrapper" id="introLoaderWrapper">
+		<div class="hongbg">
+			<div class="introLoader">
+				<div><img alt="Hong Zi" src="https://i.imgur.com/Bv3hLi3.jpg" style="border-radius: 80px;"></div><svg height="100%" viewbox="0 0 52.6 47" width="100%">
+				<path d="M1.4,41.4c0.2-1.3,2-12.5,2-12.5c1.1,1.1,2.8,2.8,2.8,2.8c0.6,0.7,1.9,0.8,2.9-0.1l8.7-7.4L8.9,13.5 C4.6,8.2,8.9,1.4,16.3,1.4l28.4,0c-2.3,2-8.9,7.6-8.9,7.6c-0.8,0.7-2.3,1.4-3.5,1.4h-9c-1.2,0-1.7,0.8-1.3,1.3l15.4,18.6 c0.6,0.8,1.4,0,1.6-0.9l1.5-8.7c0.2-1.1,0.8-2.2,1.9-3.1c1.1-0.9,6.4-5.3,8.9-7.2l-4.8,27.2c-1.3,7.4-8.6,10.9-13.2,5.4l-8.8-10.6 l-13.7,11C6.4,47.2,0.5,46.5,1.4,41.4z" fill="transparent" height="100%" id="path" stroke="#B2B2B2" stroke-width="1" width="100%" xmlns="http://www.w3.org/2000/svg"></path>
+				<path d="M1.4,41.4c0.2-1.3,2-12.5,2-12.5c1.1,1.1,2.8,2.8,2.8,2.8c0.6,0.7,1.9,0.8,2.9-0.1l8.7-7.4L8.9,13.5 C4.6,8.2,8.9,1.4,16.3,1.4l28.4,0c-2.3,2-8.9,7.6-8.9,7.6c-0.8,0.7-2.3,1.4-3.5,1.4h-9c-1.2,0-1.7,0.8-1.3,1.3l15.4,18.6 c0.6,0.8,1.4,0,1.6-0.9l1.5-8.7c0.2-1.1,0.8-2.2,1.9-3.1c1.1-0.9,6.4-5.3,8.9-7.2l-4.8,27.2c-1.3,7.4-8.6,10.9-13.2,5.4l-8.8-10.6 l-13.7,11C6.4,47.2,0.5,46.5,1.4,41.4z" fill="#C60C30" height="100%" id="fill" width="100%" xmlns="http://www.w3.org/2000/svg"></path>Sorry, your browser does not support inline SVG.</svg><br>
+				<div>
+					<span class="textwan"><a id="show23">👮‍🚦🛵 vvv🏍︎ 🚓🚓</a><br>
+					<input id="label" onclick="show22()" type="checkbox"> <label><a id="show22">【此群已被屏蔽，點擊卍解！】</a></label></span>
+					<div id="hide22" style="display: none;">
+						<span class="textwan"><img alt="vvvgroup的一張QR Join圖片" src="https://upload.cc/i1/2021/06/24/Ivx6HZ.png" width="250px"><br>
+						⚠️注意事項請細讀：</span>
+						<p><span class="textwan">本群組歡迎任何人士（車主）加入電單車波車群組；<br>
+						討論有關電單車心得，或電單車資訊，交流安全駕駛經驗，討論共同興趣新知；<br>
+						各車友可以自由加入或退出，自由約會。</span></p>
+					</div><span class="textwan"><a>Power By: Seifr.Tong</a></span>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
