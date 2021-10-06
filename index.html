@@ -26,179 +26,838 @@
 <html lang="en">
 
 <head>
-	<meta charset="utf-8">
-	<meta content="IE=edge" http-equiv="X-UA-Compatible"><!-- Status bar colors -->
-	<meta content="yes" name="mobile-web-app-capable">
-	<meta content="yes" name="apple-mobile-web-app-capable">
-	<meta content="Akrapovič" name="apple-mobile-web-app-title">
-	<meta content="width=device-width,initial-scale=1,maximum-scale=1,height=device-height,viewport-fit=cover"
-		name="viewport">
-	<title>👮‍🚦🛵 vvv🏍︎ 🚓🚓</title>
-	<!-- Bootstrap -->
-	<link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
-	<link href="css/vvv.css" rel="stylesheet" media="screen">
-	<link href="css/loading.css" rel="stylesheet" type="text/css" />
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js">
-	</script>
-	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js">
-	</script>
+    <meta charset="UTF-8">
+    <title>👮‍🚦🛵 vvv🏍︎ 🚓🚓</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700|Old+Standard+TT"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Old+Standard+TT:400,500,700" rel="stylesheet">
+    <!--    <link rel="stylesheet" type="text/css" href="css/animate.css" /> -->
+    <link rel="stylesheet" type="text/css" href="css/prettyPhoto.css" />
+    <link href="css/jquery.bsPhotoGallery.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
 
-	<style>
-		html,
-		body {
-			height: 100%;
-			padding: 0;
-			margin: 0;
-			background: url(https://i.imgur.com/mjNtbDA.jpg);
-			background-size: cover;
-		}
-
-		.introLoaderWrapper {
-			width: 100%;
-			height: 100%;
-			position: absolute;
-			top: 0;
-			left: 0;
-			background-size: cover;
-			z-index: 9999;
-			display: flex;
-			justify-content: center;
-			align-items: center;
-			text-align: center;
-
-		}
-	</style>
+    <link rel="stylesheet" type="text/css" href="css/bgstyle.css">
 </head>
 
 <body>
-	<div class="introLoaderWrapper" id="introLoaderWrapper">
-		<div id="loading" class="loadingbg">
-			<div id="loading">
-				<div class="loader-inner ball-beat">
-					<div></div>
-					<div></div>
-					<div></div>
-				</div>
-			</div>
-		</div>
-		<div class="hongbg">
-			<div class="introLoader">
-				<div><img alt="Hong Zi" class="icon" src="https://i.imgur.com/Bv3hLi3.jpg" style="border-radius: 80px;">
-				</div><a style="color:Yellow;">群主：Hong Zi</a><br>
-				<svg height="100%" viewbox="0 0 52.6 47" width="100%">
-					<path
-						d="M1.4,41.4c0.2-1.3,2-12.5,2-12.5c1.1,1.1,2.8,2.8,2.8,2.8c0.6,0.7,1.9,0.8,2.9-0.1l8.7-7.4L8.9,13.5 C4.6,8.2,8.9,1.4,16.3,1.4l28.4,0c-2.3,2-8.9,7.6-8.9,7.6c-0.8,0.7-2.3,1.4-3.5,1.4h-9c-1.2,0-1.7,0.8-1.3,1.3l15.4,18.6 c0.6,0.8,1.4,0,1.6-0.9l1.5-8.7c0.2-1.1,0.8-2.2,1.9-3.1c1.1-0.9,6.4-5.3,8.9-7.2l-4.8,27.2c-1.3,7.4-8.6,10.9-13.2,5.4l-8.8-10.6 l-13.7,11C6.4,47.2,0.5,46.5,1.4,41.4z"
-						fill="transparent" height="100%" id="path" stroke="#B2B2B2" stroke-width="1" width="100%"
-						xmlns="http://www.w3.org/2000/svg"></path>
-					<path
-						d="M1.4,41.4c0.2-1.3,2-12.5,2-12.5c1.1,1.1,2.8,2.8,2.8,2.8c0.6,0.7,1.9,0.8,2.9-0.1l8.7-7.4L8.9,13.5 C4.6,8.2,8.9,1.4,16.3,1.4l28.4,0c-2.3,2-8.9,7.6-8.9,7.6c-0.8,0.7-2.3,1.4-3.5,1.4h-9c-1.2,0-1.7,0.8-1.3,1.3l15.4,18.6 c0.6,0.8,1.4,0,1.6-0.9l1.5-8.7c0.2-1.1,0.8-2.2,1.9-3.1c1.1-0.9,6.4-5.3,8.9-7.2l-4.8,27.2c-1.3,7.4-8.6,10.9-13.2,5.4l-8.8-10.6 l-13.7,11C6.4,47.2,0.5,46.5,1.4,41.4z"
-						fill="#C60C30" height="100%" id="fill" width="100%" xmlns="http://www.w3.org/2000/svg"></path>
-					Sorry, your browser does not support inline SVG.
-				</svg><br>
-				<div class="Social_box">
-					<img src="./img/div_peeker.gif" class="desukZ">
-					<div class="Social_box_link">
-						<div>
-							<div class="css-oq8uxk">
-								<ul class="nav nav-tabs">
-									<li class="active">
-										<a href="#">Home</a>
-									</li>
-									<li>
-										<a href="photo.html">色(攝)影圖</a>
-									</li>
-									<li>
-										<a href="popcat.html">撚貓</a>
-									</li>
-									<li>
-										<a href="./discount.html">優惠</a>
-									</li>
-									<svg width="52" height="60" viewBox="0 0 52 60" class="css-1ti8sa7" fill="none">
-										<path fill="#121212"
-											d="M28.052 54.284c-1.881 0-3.76.015-5.638 0a2.041 2.041 0 00-1.36.464 607.935 607.935 0 01-5.391 4.22 4.752 4.752 0 01-.834.539 1.566 1.566 0 01-2.15-1.844c.287-.885.573-1.764.893-2.631.19-.504.184-.716-.46-.816-2.357-.361-4.407-1.312-5.856-3.307a9.136 9.136 0 01-1.526-3.58c-.117-.572-.286-.546-.781-.38-.75.255-.94.681-.722 1.391.05.187.07.38.057.573a1.186 1.186 0 01-.967 1.237 1.146 1.146 0 01-1.395-.707c-.137-.31-.226-.501-.632-.49a1.21 1.21 0 01-1.203-.842c-.226-.555.017-.993.404-1.334.286-.263.286-.427.08-.75a1.229 1.229 0 01.286-1.718 1.175 1.175 0 011.652.243c.352.419.65.413 1.16.272 1.577-.438 2.368-1.305 2.388-3.04.017-1.486.415-2.96.592-4.447.19-1.577-.12-3.132-.309-4.687-.246-2.004-.572-4.008-.89-5.99-.163-1.067.527-1.755 1.589-1.574 1.343.223 1.325.22 1.506-1.146.269-2.027.54-4.051.859-6.07a1.323 1.323 0 00-.627-1.491c-2.374-1.638-3.568-4.052-4.06-6.835-.556-3.083.779-5.463 3.035-7.41C10.008.188 12.73-.199 15.592.082c1.612.138 3.19.556 4.66 1.234a6.373 6.373 0 012.577 2.072c.364.525.773.65 1.366.648 5.234-.02 10.465 0 15.696 0 2.13 0 4.097.495 5.775 1.875 2.448 2.004 3.341 4.644 3.07 7.73a2.295 2.295 0 01-.05.287c-.211 1.145-.252 1.987.86 2.975a5.4 5.4 0 01.463 7.381 16.1 16.1 0 01-2.64 2.694 1.59 1.59 0 00-.658 1.114c-.724 5.225-1.52 10.44-2.176 15.673-.647 5.191-4.089 9.18-9.08 10.307a13.87 13.87 0 01-3.192.238h-4.208l-.003-.026z">
-										</path>
-										<path fill="#FEFEFE"
-											d="M14.872 57.128c.53-1.552.971-2.9 1.452-4.232.163-.453 0-.53-.4-.533-.86 0-1.719-.023-2.578-.083-1.614-.114-2.949-.839-4.094-1.95a1.63 1.63 0 01-.51-1.325c.055-1.117.075-2.236.075-3.353a.736.736 0 01.59-.83c.615-.178 1.216-.407 1.82-.622.53-.186.77-.572.61-1.114-.171-.572-.644-.638-1.145-.492-.386.109-.767.252-1.145.372-.484.155-.722 0-.71-.535.023-1.068 0-2.139.029-3.21.06-3.533-.396-7.02-.931-10.502-.023-.14-.052-.286-.066-.42-.054-.642.103-.791.727-.636 1.315.32 2.64.604 3.934.999 2.005.613 3.995.438 5.97-.12 2.365-.67 4.558-1.767 6.769-2.812a1.245 1.245 0 00.724-1.145c.086-1.257.192-2.514.286-3.768.058-.733.22-.86.897-.573 1.95.753 3.902 1.5 5.838 2.29.838.349 1.774.38 2.634.09 2.075-.67 4.017-1.695 6.02-2.537.894-.367.923-.367 1.29.55.638 1.586 1.245 3.183 1.923 4.755.23.533.095.833-.317 1.145a45.216 45.216 0 01-5.492 3.57c-1 .556-1.06.682-.859 1.822 1.005 5.483 1.46 11.026 1.867 16.575a1.45 1.45 0 01-.527 1.302c-1.958 1.793-4.263 2.577-6.903 2.577-3.722-.034-7.421 0-11.132 0a1.72 1.72 0 00-1.2.45c-1.723 1.414-3.516 2.78-5.446 4.295z">
-										</path>
-										<path fill="#06F"
-											d="M38.851 18.987a3.811 3.811 0 00-.048-.438c-.34-1.406.043-2.505 1.23-3.401.702-.53.734-1.111.353-1.684-.38-.573-.936-.687-1.74-.286-.287.146-.359.086-.427-.19a1.897 1.897 0 00-.255-.572 1.123 1.123 0 00-1.369-.49 1.194 1.194 0 00-.83 1.275c.028.253.073.505.135.753-.439-.06-.828-.287-1.26-.104a1.189 1.189 0 00-.81.911 1.042 1.042 0 00.498 1.168c.47.286.962.513 1.457.745a.658.658 0 01.472.624c.03.784.092 1.569.16 2.348a.552.552 0 01-.392.65 3.398 3.398 0 01-2.811.06c-2.274-.96-4.581-1.821-6.892-2.712-1.165-.452-1.844-.034-1.955 1.206-.138 1.514-.287 3.029-.375 4.55a.97.97 0 01-.613.936c-2.156.996-4.312 2.004-6.671 2.436a7.73 7.73 0 01-3.25-.071c-.902-.212-1.792-.479-2.697-.668-.432-.088-.527-.286-.47-.681.338-2.306.664-4.612.977-6.918.051-.386.22-.5.572-.403a2.817 2.817 0 001.55-.029c.59-.157.981.055 1.394.438a9.752 9.752 0 003.85 2.22c.994.285 1.492-.133 1.298-1.146-.172-.885-.315-1.778-.533-2.654a1.199 1.199 0 01.4-1.312 21.19 21.19 0 003.31-4.008c.986-1.526 1.518-3.17 1.146-5.005-.1-.5.074-.607.541-.607 5.016.014 10.036 0 15.052.014 2.05 0 3.89.573 5.322 2.14 1.55 1.703 1.781 3.721 1.604 5.926-.115 1.412-.627 2.15-2.079 2.577-1.786.521-3.453 1.451-5.17 2.204a1.43 1.43 0 01-.674.198z">
-										</path>
-										<path fill="#FEFEFE"
-											d="M17.928 18.369c-1.045-.361-1.773-1.045-2.506-1.718-.38-.35-.821-.573-1.354-.47-2.256.484-3.862-.704-5.28-2.167-1.775-1.835-2.64-4.112-2.27-6.646.395-2.7 3.238-5.193 5.987-5.471 2.206-.249 4.44.04 6.51.842 3.396 1.328 4.53 4.612 2.65 7.73a18.546 18.546 0 01-3.723 4.387 1.19 1.19 0 00-.441 1.371c.183.673.278 1.377.427 2.142z">
-										</path>
-										<path fill="#06F"
-											d="M42.013 45.892a154.544 154.544 0 00-.917-9.388 72.47 72.47 0 00-.632-4.157.701.701 0 01.389-.86c1.01-.623 2.004-1.273 3.012-1.906.175-.109.355-.355.555-.238.2.118.106.433.078.653a1194.67 1194.67 0 01-.825 5.927c-.435 3.008-.877 6.017-1.326 9.027a1.65 1.65 0 01-.334.942z">
-										</path>
-										<path fill="#B7B7B6"
-											d="M45.351 20.628c-.286-.287-.424-.47-.364-.719 0-.037.155-.089.166-.074.159.232.229.513.198.793z">
-										</path>
-										<path fill="#121212"
-											d="M25.105 32.77c.029 1.146-.587 1.776-1.718 1.801-1.13.026-1.958-.738-1.966-1.872-.01-1.134.835-1.835 2.164-1.855 1.08-.015 1.477.503 1.52 1.926z">
-										</path>
-										<path fill="#444"
-											d="M14.326 6.69c.206-.165.42-.318.644-.458a.965.965 0 011.414.352c.454.783.784 1.63.98 2.514.12.455-.212.518-.516.59-.303.071-.627.134-.722-.318-.111-.533-.206-1.074-.369-1.595-.094-.306-.157-.787-.676-.621-.475.149-.572.498-.372.962.22.527.375 1.076.59 1.603.26.641-.24.747-.621.873s-.9.407-1.117-.286a39.818 39.818 0 01-1.076-4.28c-.118-.573.312-.665.701-.782.39-.117.69-.054.807.418.086.346.09.719.333 1.028zm-3.207 4.217l1.145-.426c.23-.08.427-.058.53.197a.384.384 0 01-.057.452.385.385 0 01-.132.092c-.83.41-1.704.722-2.606.93-.535.113-.81-.285-.63-.858.264-.836.573-1.655.88-2.508-.398-.092-.74.114-1.094.2-.223.054-.43.089-.544-.172a.425.425 0 01.215-.601 5.775 5.775 0 012.56-.504c.497.023.66.407.506.885-.235.71-.478 1.426-.773 2.313zm7.753-1.852c-.346.051-.55-.115-.658-.467-.18-.573-.287-1.145-.427-1.718-.183-.716.25-.887.75-1.034.553-.163.684.255.822.645.137.39.303.859.452 1.271.301.845-.003 1.277-.939 1.303z">
-										</path>
-										<path fill="#4A4B4A"
-											d="M18.045 3.666a.925.925 0 01.899.925.873.873 0 01-.934.893.86.86 0 01-.89-.901c.034-.582.39-.848.925-.917z">
-										</path>
-									</svg>
-									<div class="css-abudlb"><span class="textwan"><a id="show23">👮‍🚦🛵 vvv🏍︎
-												🚓🚓</a><br>
-									</div>
-							</div>
-						</div>
+
+    <div class="">
+        <div class="rq0escxv l9j0dhe7 du4w35lb j83agx80 pfnyh3mw taijpn5t gs1a9yip owycx6da btwxx1t3 cddn0xzi">
+            <div class="rq0escxv l9j0dhe7 du4w35lb j83agx80 cbu4d94t g5gj957u d2edcug0 hpfvmrgz rj1gh0hx buofh1pr">
+                <div class="k4urcfbm l9j0dhe7 datstx6m">
+                    <div class="rq0escxv l9j0dhe7 du4w35lb j83agx80 pfnyh3mw taijpn5t gs1a9yip owycx6da btwxx1t3">
+                        <div class="i09qtzwb rq0escxv n7fi1qx3 pmk7jnqg j9ispegn kr520xx4 ni8dbmo4 stjgntxs">
+                            <div class="do00u71z l9j0dhe7 k4urcfbm"
+                                style="left: 50%; position: absolute; top: 0px; transform: translateX(-50%); padding-top: 75%;">
+                                <div
+                                    class="gs1a9yip ow4ym5g4 auili1gw j83agx80 cbu4d94t buofh1pr g5gj957u i1fnvgqd oygrvhab cxmmr5t8 hcukyx3x kvgmc6g5 tgvbjcpo hpfvmrgz qt6c0cv9 rz4wbd8a a8nywdso jb3vyjys du4w35lb i09qtzwb rq0escxv n7fi1qx3 pmk7jnqg j9ispegn kr520xx4">
+                                    <img alt=""
+                                        class="i09qtzwb rq0escxv n7fi1qx3 pmk7jnqg j9ispegn kr520xx4 datstx6m k4urcfbm"
+                                        referrerpolicy="origin-when-cross-origin"
+                                        src="https://scontent-hkg4-1.xx.fbcdn.net/v/t1.6435-9/fb50/p240x240/132092226_224839405818018_6825638916115616789_n.jpg?_nc_cat=103&amp;ccb=1-5&amp;_nc_sid=e3f864&amp;_nc_ohc=yPF6iSY5UFcAX957NLI&amp;tn=v3pboP3YHvrCb6Bc&amp;_nc_ht=scontent-hkg4-1.xx&amp;oh=eda4dcec704f446ddafb4c35814a2f76&amp;oe=6181FDB1">
+                                </div>
+                            </div>
+                            <div class="i09qtzwb rq0escxv n7fi1qx3 pmk7jnqg j9ispegn kr520xx4 jge66auo"></div>
+                        </div>
+                        <div
+                            class="rq0escxv l9j0dhe7 du4w35lb o4feeg3o hpfvmrgz rj1gh0hx buofh1pr g5gj957u bp9cbjyn j83agx80 cbu4d94t taijpn5t">
+                            <div class="ni8dbmo4 stjgntxs l9j0dhe7 k4urcfbm uo3d90p7 l82x9zwi kipmrytf bti8j40k"
+                                style="border-radius: 0px 0px max(0px, min(8px, ((100vw - 4px) - 100%) * 9999)) max(0px, min(8px, ((100vw - 4px) - 100%) * 9999)) / 0px 0px 8px 8px;">
+                                <a aria-label="Link to open profile cover photo"
+                                    class="oajrlxb2 g5ia77u1 qu0x051f esr5mh6w e9989ue4 r7d6kgcz rq0escxv nhd2j8a9 a8c37x1j p7hjln8o kvgmc6g5 cxmmr5t8 oygrvhab hcukyx3x jb3vyjys rz4wbd8a qt6c0cv9 a8nywdso i1ao9s8h esuyzwwr f1sip0of lzcic4wl n00je7tq arfg74bv qs9ysxi8 k77z8yql l9j0dhe7 abiwlrkh p8dawk7l">
+                                    <div class="do00u71z l9j0dhe7 k4urcfbm ni8dbmo4 stjgntxs"
+                                        style="padding-top: 37.037%;">
+                                        <div
+                                            class="gs1a9yip ow4ym5g4 auili1gw j83agx80 cbu4d94t buofh1pr g5gj957u i1fnvgqd oygrvhab cxmmr5t8 hcukyx3x kvgmc6g5 tgvbjcpo hpfvmrgz qt6c0cv9 rz4wbd8a a8nywdso jb3vyjys du4w35lb i09qtzwb rq0escxv n7fi1qx3 pmk7jnqg j9ispegn kr520xx4">
+                                            <div class="do00u71z l9j0dhe7 k4urcfbm ni8dbmo4 stjgntxs"
+                                                style="left: 50%; position: absolute; top: 49.9216%; transform: translate(-50%, -49.9216%); padding-top: 75%;">
+                                                <div
+                                                    class="gs1a9yip ow4ym5g4 auili1gw j83agx80 cbu4d94t buofh1pr g5gj957u i1fnvgqd oygrvhab cxmmr5t8 hcukyx3x kvgmc6g5 tgvbjcpo hpfvmrgz qt6c0cv9 rz4wbd8a a8nywdso jb3vyjys du4w35lb i09qtzwb rq0escxv n7fi1qx3 pmk7jnqg j9ispegn kr520xx4">
+                                                    <img data-imgperflogname="profileCoverPhoto" alt=""
+                                                        class="i09qtzwb rq0escxv n7fi1qx3 pmk7jnqg j9ispegn kr520xx4 datstx6m k4urcfbm"
+                                                        referrerpolicy="origin-when-cross-origin"
+                                                        src="https://scontent-hkg4-1.xx.fbcdn.net/v/t1.6435-9/132092226_224839405818018_6825638916115616789_n.jpg?_nc_cat=103&amp;ccb=1-5&amp;_nc_sid=e3f864&amp;_nc_ohc=yPF6iSY5UFcAX957NLI&amp;tn=v3pboP3YHvrCb6Bc&amp;_nc_ht=scontent-hkg4-1.xx&amp;oh=9c2dc398bc7d36ac72c9eda591162404&amp;oe=61830810">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="rq0escxv l9j0dhe7 du4w35lb j83agx80 pfnyh3mw taijpn5t gs1a9yip owycx6da btwxx1t3 ihqw7lf3 cddn0xzi">
+            <div
+                class="rq0escxv l9j0dhe7 du4w35lb j83agx80 cbu4d94t g5gj957u marjyy4e hpfvmrgz rj1gh0hx buofh1pr hv4rvrfc dati1w0a">
+                <div class="cbu4d94t j83agx80">
+                    <div class="aovydwv3 o8rfisnq j83agx80 do00u71z tr9rh885">
+                        <div class="rq0escxv l9j0dhe7 du4w35lb j83agx80 pfnyh3mw i1fnvgqd gs1a9yip owycx6da btwxx1t3">
+                            <div class="rq0escxv l9j0dhe7 du4w35lb j83agx80 cbu4d94t pfnyh3mw d2edcug0 hpfvmrgz">
+                                <div
+                                    class="b3onmgus e5nlhep0 ph5uu5jm ecm0bbzt spb7xbtv bkmhp75w emlxlaya s45kfl79 cwj9ozl2">
+                                    <a aria-label="Seng Ma"
+                                        class="oajrlxb2 gs1a9yip g5ia77u1 mtkw9kbi tlpljxtp qensuy8j ppp5ayq2 goun2846 ccm00jje s44p3ltw mk2mc5f4 rt8b4zig n8ej3o3l agehan2d sk4xxmp2 rq0escxv nhd2j8a9 q9uorilb mg4g778l btwxx1t3 pfnyh3mw p7hjln8o kvgmc6g5 cxmmr5t8 oygrvhab hcukyx3x tgvbjcpo hpfvmrgz jb3vyjys rz4wbd8a qt6c0cv9 a8nywdso l9j0dhe7 i1ao9s8h esuyzwwr f1sip0of du4w35lb lzcic4wl n00je7tq arfg74bv qs9ysxi8 k77z8yql abiwlrkh p8dawk7l oo9gr5id">
+                                        <div class="q9uorilb l9j0dhe7 pzggbiyp du4w35lb"><svg aria-hidden="false"
+                                                aria-label="Seng Ma" class="pzggbiyp"
+                                                data-visualcompletion="ignore-dynamic" role="img"
+                                                style="height: 168px; width: 168px;">
+                                                <mask id="jsc_c_fp">
+                                                    <circle cx="84" cy="84" fill="white" r="84"></circle>
+                                                </mask>
+                                                <g mask="url(#jsc_c_fp)">
+                                                    <image x="0" y="0" height="100%"
+                                                        preserveAspectRatio="xMidYMid slice" width="100%"
+                                                        xlink:href="https://scontent-hkg4-1.xx.fbcdn.net/v/t1.6435-1/p480x480/205982709_339053321063292_2862811371207736857_n.jpg?_nc_cat=106&amp;ccb=1-5&amp;_nc_sid=7206a8&amp;_nc_ohc=iJQ-a-l3i88AX_h71q2&amp;_nc_ht=scontent-hkg4-1.xx&amp;oh=9427af14ccc09412ff4c56d51e70343d&amp;oe=6180ABA8"
+                                                        style="height: 168px; width: 168px;"></image>
+                                                    <circle class="mlqo0dh0 georvekb s6kb5r3f" cx="84" cy="84" r="84">
+                                                    </circle>
+                                                </g>
+                                            </svg>
+                                            <div class="s45kfl79 emlxlaya bkmhp75w spb7xbtv i09qtzwb n7fi1qx3 b5wmifdl hzruof5a pmk7jnqg j9ispegn kr520xx4 c5ndavph art1omkt ot9fgl3s rnr61an3"
+                                                data-visualcompletion="ignore"></div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="rq0escxv l9j0dhe7 du4w35lb j83agx80 pfnyh3mw taijpn5t gs1a9yip owycx6da btwxx1t3 d1544ag0 tw6a2znq discj3wi b5q2rw42 lq239pai mysgfdmx hddg9phg">
+                        <div
+                            class="rq0escxv l9j0dhe7 du4w35lb j83agx80 cbu4d94t pfnyh3mw d2edcug0 hpfvmrgz p8fzw8mz pcp91wgn iuny7tx3 ipjc6fyt">
+                            <div class="rq0escxv l9j0dhe7 du4w35lb j83agx80 cbu4d94t pfnyh3mw d2edcug0">
+                                <div class="rq0escxv l9j0dhe7 du4w35lb j83agx80 cbu4d94t buofh1pr tgvbjcpo">
+                                    <div
+                                        class="rq0escxv l9j0dhe7 du4w35lb j83agx80 cbu4d94t pfnyh3mw d2edcug0 bp9cbjyn jb3vyjys">
+                                        <div class="j83agx80 cbu4d94t obtkqiv7 sv5sfqaa">
+                                            <div class="bi6gxh9e aov4n071"><span
+                                                    class="d2edcug0 hpfvmrgz qv66sw1b c1et5uql lr9zc1uh a8c37x1j keod5gw0 nxhoafnm aigsh9s9 l1jc4y16 fe6kdd0r mau55g9w c8b282yb rwim8176 mhxlubs3 p5u9llcw hnhda86s oo9gr5id oqcyycmt"
+                                                    dir="auto">
+                                                    <h1 class="gmql0nx0 l94mrbxd p1ri9a11 lzcic4wl" dir="auto">Seng Ma
+                                                    </h1>
+                                                </span></div>
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="rq0escxv l9j0dhe7 du4w35lb j83agx80 cbu4d94t pfnyh3mw d2edcug0 bp9cbjyn discj3wi">
+                                        <div class="j83agx80 cbu4d94t obtkqiv7 sv5sfqaa">
+                                            <div class="bi6gxh9e aov4n071"><span
+                                                    class="d2edcug0 hpfvmrgz qv66sw1b c1et5uql lr9zc1uh a8c37x1j keod5gw0 nxhoafnm aigsh9s9 d3f4x2em fe6kdd0r mau55g9w c8b282yb mdeji52x a5q79mjw g1cxx5fr b1v8xokw m9osqain oqcyycmt"
+                                                    dir="auto"></span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="rq0escxv l9j0dhe7 du4w35lb j83agx80 pfnyh3mw taijpn5t gs1a9yip owycx6da btwxx1t3 cddn0xzi">
+            <div
+                class="rq0escxv l9j0dhe7 du4w35lb j83agx80 cbu4d94t g5gj957u marjyy4e hpfvmrgz rj1gh0hx buofh1pr hv4rvrfc dati1w0a">
+                <div class="l6v480f0"></div>
+            </div>
+        </div>
+    </div>
 
 
-						<div class="Social_box_link">
-							<!--<span class="textwan"><a id="show23">👮‍🚦🛵 vvv🏍︎ 🚓🚓</a><br>-->
-							<input id="label" onclick="show22()" type="checkbox"> <label><a
-									id="show22">【此群已被屏蔽，點擊卍解！】</a></label></span>
-							<div id="hide22" style="display: none;">
-								<span class="textwan"><img alt="vvvgroup的一張QR Join圖片" src="./img/vvvqr.png"
-										width="100px"><br>
-									⚠️注意事項請細讀：</span>
-								<p><span class="textwan">本Wechat群組歡迎任何車主加入，<br>
-										互相尊重，不出賣群內車友，<br>
-										討論有關電單車心得，交流安全駕駛經驗，各車友可以自由約會出車。</span></p>
-							</div>
-						</div>
-						<div id="inreadaddiv" style="background-color:black;"></div>
+    <!-- 
+    <header>
+        <div class="container">
+            <div class="singnature">
+                <img width="100 rem" src="images/vvvlogo.png" alt="sign">
+            </div>
+            <div class="share-sec">
+                <ul>
+                    <li>
+                        <a href=""> <span class="fab fa-facebook"></span></a>
+                    </li>
+                    <li>
+                        <a href=""> <span class="fab fa-instagram"></span></a>
+                    </li>
+                    <li>
+                        <a href=""> <span class="fab fa-twitter"></span></a>
+                    </li>
+                    <li>
+                        <a href=""> <span class="fab fa-pinterest"></span></a>
+                    </li>
+                    <li>
+                        <a href=""> <span class="fab fa-google-plus-g"></span></a>
+                    </li>
+                </ul>
+            </div>
+            <a href="#" class="download-sec right">Don't fall in love with me</a>
 
-						<div class="container">
-							<div class="embed-responsive embed-responsive-16by9">
-								<iframe class="embed-responsive-item"
-									src="https://www.youtube.com/embed/A_X__d0cJTU?controls=0" frameborder="0"
-									allowfullscreen></iframe>
-								</di>
-							</div>
-						</div><span class="textwan">
-							<hr><a>Power By: Seifr.Tong</a>
-						</span>
-					</div>
-				</div>
-			</div>
-		</div>
-		<script>
-			var isShow = false;
-			function show22() {
-				if (!isShow) {
-					isShow = true;
-					document.getElementById('hide22').style.display = '';
-					document.getElementById('show22').innerText = "【一鍵后悔】";
-				}
-				else {
-					isShow = false;
-					document.getElementById('hide22').style.display = 'none';
-					document.getElementById('show22').innerText = "【此群已被屏蔽，點擊卍解！】";
-				}
-			}
-			// Lading加載
-			document.onreadystatechange = function () {
-				if (document.readyState == "complete") {
-					$("#loading").fadeOut();
-				}
-			}
-		</script>
+            <div class="profile-img" style="text-align:center;">
+                <img alt="Seng Ma" class="icon" src="images/Seng_Ma.png">
+            </div>
+        </div>
+    </header>-->
+
+    <div class=" banner-sec">
+        <div class="container">
+            <div class="menu-bar">
+                <ul>
+                    <li class="active">
+                        <a href="#" style="border-bottom: 1px solid;">About </a>
+                    </li>
+                    <li>
+                        <a href="#">色(攝)影圖</a>
+                    </li>
+                    <li>
+                        <a href="#">撚貓</a>
+                    </li>
+                    <li>
+                        <a href="#">優惠 </a>
+                    </li>
+                    <li>
+                        <a href="#">join vvv</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- <h2>Helo I am Seng Ma (Son of the Sun) <br> ??? years old Kamen Rider from Macau, Chinese.
+            </h2>
+            <span class="devider"></span> -->
+        </div>
+    </div>
+    <!-- <section class="skills-sec" style="background:url(./images/skills.jpg)no-repeat;">
+        <div class="container">
+            <h2>My Skills & Abilities</h2>
+            <h5>佛系技能</h5>
+            <ul class="skills-set">
+                <li class="indvidual-skill">
+                    <div class="skill_title">
+                        <span>Adobe Photoshop - 9+ Years Experience</span>
+                    </div>
+                    <div class="barfiller">
+                        <span class="fill" style="width:90%"></span>
+                    </div>
+                </li>
+                <li class="indvidual-skill">
+                    <div class="skill_title">
+                        <span>Wordpress - 2+ Years Experience</span>
+                    </div>
+                    <div class="barfiller">
+                        <span class="fill" style="width:30%"></span>
+                    </div>
+                </li>
+                <li class="indvidual-skill">
+                    <div class="skill_title">
+                        <span>Html / CSS - 9+ Years Experience</span>
+                    </div>
+                    <div class="barfiller">
+                        <span class="fill" style="width:90%"></span>
+                    </div>
+                </li>
+                <li class="indvidual-skill">
+                    <div class="skill_title">
+                        <span>Javascrpt - 9+ Years Experience</span>
+                    </div>
+                    <div class="barfiller">
+                        <span class="fill" style="width:95%"></span>
+                    </div>
+                </li>
+                <li class="indvidual-skill">
+                    <div class="skill_title">
+                        <span>C# - 6+ Years Experience</span>
+                    </div>
+                    <div class="barfiller">
+                        <span class="fill" style="width:85%"></span>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section> -->
+    <!-- <section class="services-sec">
+        <div class="container">
+            <h2>How Can I Help You</h2>
+            <h5>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem type specimen
+                book. It
+                has survived not only five</h5>
+            <div class="row">
+                <div class="col-md-6 skill-item">
+                    <span><i class="fas fa-desktop"></i> </span>
+                    <h3>Web Designing</h3>
+                    <h6>Lorem Ipsum is simply dummy typesetting industry. Lorem type specimen book. It has of
+                        the
+                        printing and typesetting industry. Lorem type specimen book. It has survived not only
+                        five</h6>
+                </div>
+                <div class="col-md-6 skill-item">
+                    <span><i class="far fa-file-code"></i> </span>
+                    <h3>Wordrpess Development</h3>
+                    <h6>Lorem Ipsum is simply dummy typesetting industry. Lorem type specimen book. It has of
+                        the
+                        printing and typesetting industry. Lorem type specimen book. It has survived not only
+                        five</h6>
+                </div>
+                <div class="col-md-6 skill-item">
+                    <span><i class="fas fa-cogs"></i> </span>
+                    <h3>Html / CSS</h3>
+                    <h6>Lorem Ipsum is simply dummy typesetting industry. Lorem type specimen book. It has of
+                        the
+                        printing and typesetting industry. Lorem type specimen book. It has survived not only
+                        five</h6>
+                </div>
+                <div class="col-md-6 skill-item">
+                    <span><i class="far fa-paper-plane"></i> </span>
+                    <h3>Mobile Designing</h3>
+                    <h6>Lorem Ipsum is simply dummy typesetting industry. Lorem type specimen book. It has of
+                        the
+                        printing and typesetting industry. Lorem type specimen book. It has survived not only
+                        five</h6>
+                </div>
+            </div>
+            <span class="devider"></span>
+            <span class="hdevider"></span>
+        </div>
+    </section> -->
+    <section class="experinece" style="background-color: black;">
+        <div class="container">
+            <div class="offset-md-5 offset-sm-4 col-md-7 col-sm-8">
+                <h2>VVV Member</h2>
+                <h5>澳門最大 VVV 聊天室<br>
+                    年輕人都在 VVV 上討論<br>
+                    不想錯過任何有趣的話題嗎？<br>
+                    趕快加入我們吧！<br>
+                    我們不會強制車友在ID前加 Lv 🌟星號🤩</h5>
+                <!-- <ul>
+                    <li>
+                        <h3>???????</h3>
+                        <h4>Sep 2017 - Nov 2017</h4>
+                        <span></span>
+                    </li>
+                    <li>
+                        <h3>???????</h3>
+                        <h4>???????</h4>
+                        <span></span>
+                    </li>
+                    <li>
+                        <h3>???????</h3>
+                        <h4>Sep 2017 - Nov 2017</h4>
+                        <span></span>
+                    </li>
+                    <li>
+                        <h3>???????</h3>
+                        <h4>Sep 2017 - Nov 2017</h4>
+                        <span></span>
+                    </li>
+                </ul> -->
+            </div> <!-- Yotube Video -->
+            <div class="embed-responsive embed-responsive-16by9">
+                <iframe class="embed-responsive-item" src="https://www.youtube-nocookie.com/embed/c569vBZvUhQ"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+            </div>
+            <!-- Youtube Video End -->
+
+        </div>
+
+    </section>
+    <!-- <section class="experinece education" style="background-color: black;">
+        <div class="container">
+            <div class=" col-md-7 col-sm-8">
+                <h2>VVV Event record</h2>
+                <h5>This is our past itinerary</h5>
+                <ul>
+                    <li>
+                        <h3>VVV Group Founding Day</h3>
+                        <h4>Sep 2020 - NOW </h4>
+                        <span></span>
+                    </li>
+                    <li>
+                        <h3>Christmas</h3>
+                        <h4>Dec 2020???</h4>
+                        <span></span>
+                    </li>
+                    <li>
+                        <h3>BBQ R1</h3>
+                        <h4>??? 2021</h4>
+                        <span></span>
+                    </li>
+                    <li>
+                        <h3>BBQ R2</h3>
+                        <h4>Oct2, 2021</h4>
+                        <span></span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section> -->
+    <section class="portfolio-section">
+        <div class="main-container section-padding">
+            <h2>Here is VVV Portfolio</h2>
+            <h5>This is a group photo of our vvv group,she brought us many unforgettable experiences.</h5>
+            <div id="portfolio">
+                <!-- <div class="menu_item">
+                    <ul class="project-menu">
+                        <li class="filter item active" data-filter="all">All</li>
+                        <li class="filter item" data-filter=".portarits">測1</li>
+                        <li class="filter item" data-filter=".wedding"> 測2 </li>
+                        <li class="filter item" data-filter=".landscape">測3 </li>
+                        <li class="filter item" data-filter=".fashion">測4</li>
+                        <li class="filter item" data-filter=".wedding">測5</li>
+                    </ul>
+                </div>
+                <div class="main_folio">
+                    <div class="folio-menu project-list">
+                        <ul class="row first gallary-img" id="myTab2">
+                            <li class="single_items mix all portarits" data-myorder="2">
+                                <a href="#folio-1">
+                                    <div class="folio_small">
+                                        <img src="https://img.onl/lTtgS0" />
+                                        <div class="zoom-icons">
+                                            <img class="link" src="images/direction-arrow.png">
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="single_items mix portarits" data-myorder="2">
+                                <a href="#folio-1">
+                                    <div class="folio_small">
+                                        <img src="https://img.onl/uLfiIa" />
+                                        <div class="zoom-icons">
+                                            <img class="link" src="images/direction-arrow.png">
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="single_items mix wedding fashion" data-myorder="2">
+                                <a href="#folio-1">
+                                    <div class="folio_small">
+                                        <img src="https://img.onl/YA9Qx" />
+                                        <div class="zoom-icons">
+                                            <img class="link" src="images/direction-arrow.png">
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="single_items mix portarits" data-myorder="2">
+                                <a href="#folio-1">
+                                    <div class="folio_small">
+                                        <img src="https://img.onl/OzgufR" />
+                                        <div class="zoom-icons">
+                                            <img class="link" src="images/direction-arrow.png">
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="single_items mix wedding landscape" data-myorder="2">
+                                <a href="#folio-1">
+                                    <div class="folio_small">
+                                        <img src="https://img.onl/m4RTsq" />
+                                        <div class="zoom-icons">
+                                            <img class="link" src="images/direction-arrow.png">
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="single_items mix fashion" data-myorder="2">
+                                <a href="#folio-1">
+                                    <div class="folio_small">
+                                        <img src="https://img.onl/tMd5qS" />
+                                        <div class="zoom-icons">
+                                            <img class="link" src="images/direction-arrow.png">
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="single_items mix wedding" data-myorder="2">
+                                <a href="#folio-1">
+                                    <div class="folio_small">
+                                        <img src="https://img.onl/tMd5qS" />
+                                        <div class="zoom-icons">
+                                            <img class="link" src="images/direction-arrow.png">
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="single_items mix fashion wedding" data-myorder="2">
+                                <a href="#folio-1">
+                                    <div class="folio_small">
+                                        <img src="https://img.onl/25glx0" />
+                                        <div class="zoom-icons">
+                                            <img class="link" src="images/direction-arrow.png">
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="single_items mix wedding" data-myorder="2">
+                                <a href="#folio-1">
+                                    <div class="folio_small">
+                                        <img src="https://img.onl/6WLSIx" />
+                                        <div class="zoom-icons">
+                                            <img class="link" src="images/direction-arrow.png">
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="single_items mix fashion landscape" data-myorder="2">
+                                <a href="#folio-1">
+                                    <div class="folio_small">
+                                        <img src="https://img.onl/CRk5qP" />
+                                        <div class="zoom-icons">
+                                            <img class="link" src="images/direction-arrow.png">
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="single_items mix portarits wedding" data-myorder="2">
+                                <a href="#folio-1">
+                                    <div class="folio_small">
+                                        <img src="https://img.onl/O5eJvT" />
+                                        <div class="zoom-icons">
+                                            <img class="link" src="images/direction-arrow.png">
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="single_items mix wedding landscape" data-myorder="2">
+                                <a href="#folio-1">
+                                    <div class="folio_small">
+                                        <img src="https://img.onl/CD7Iqh" />
+                                        <div class="zoom-icons">
+                                            <img class="link" src="images/direction-arrow.png">
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div> -->
+                <!-- VVV Photo -->
+                <div ID="ngy2p" data-nanogallery2='{
+                    "flickrAPIKey": "2ec92943c9c2a7842c257dba71af3087",
+                    "userID": "161816402@N02",
+                    "kind": "flickr",
+                    "photoset": "72157719968539224",
+                    "thumbnailWidth": "320",
+                    "thumbnailHeight": "320",
+                    "thumbnailBorderVertical": 0,
+                    "thumbnailBorderHorizontal": 0,
+                    "thumbnailLabel": {
+                      "position": "onBottom",
+                      "align": "right",
+                      "display": false
+                    },
+                    "thumbnailHoverEffect2": "imageScaleIn80|imageGrayOn|labelAppear75",
+                    "galleryDisplayMode": "pagination",
+                    "galleryDisplayMoreStep": 1,
+                    "galleryLastRowFull": true,
+                    "galleryPaginationMode": "numbers",
+                    "thumbnailAlignment": "center",
+                    "thumbnailGutterWidth": 8,
+                    "thumbnailGutterHeight": 8,
+                    "gallerySorting": "random",
+                    "displayBreadcrumb": false,
+                    "breadcrumbAutoHideTopLevel": false,
+                    "breadcrumbOnlyCurrentLevel": false,
+                    "thumbnailOpenImage": true
+                  }'>            
+                </div>
+                <!-- VVV Photo End -->
+            </div>
+        </div>
+    </section>
+    <section class="contact-sec">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8  col-sm-12 content">
+                    <h2>Got a project in mind?</h2>
+                    <h5>We are here to serve you in photography, just call us!</h5>
+                </div>
+                <div class="col-md-4 col-sm-12 contact-btn">
+                    <a href="mailto:tongsquall10@gmail.com" class="right">contact us</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- <section class="blog-sec">
+        <div class="container">
+            <h2>Read My Blog Posts</h2>
+            <h5>未撚到</h5>
+            <div class="row blog-posts">
+                <div class="col-md-6 left-sec">
+                    <div class="blog-item">
+                        <h3>未撚到寫乜</h3>
+                        <h5>平凡的一日</h5>
+                        <a href="#">Read More</a>
+                        <span class="icon-sec"><i class="far fa-newspaper"></i></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+
+
+    <section id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-8 col-12-medium">
+                    <section>
+                        <header>
+                            <h2>VVV Event record</h2>
+                            <h3>Blandit nisl adipiscing</h3>
+                        </header>
+                        <ul class="dates">
+                            <li>
+                                <span class="date">Sep 2020<strong>27</strong></span>
+                                <h3><a href="#">VVV Group Founding Day</a></h3>
+                                <p>對不起，我是臥底。</p>
+                            </li>
+                            <li>
+                                <span class="date">Dec 2020 <strong>???</strong></span>
+                                <h3><a href="#">Christmas</a></h3>
+                                <p>快點回火星吧，地球是很危險地。</p>
+                            </li>
+                            <li>
+                                <span class="date">Jan 2021 <strong>15</strong></span>
+                                <h3><a href="#">VVV 官網</a></h3>
+                                <p>幫人中風</p>
+                            </li>
+                            <li>
+                                <span class="date">??? 2021 <strong>???</strong></span>
+                                <h3><a href="#">BBQ R1</a></h3>
+                                <p>先生，你額有朝天骨，眼裡有靈光，仙人轉世，神仙下凡，我終於等到你了,不要走，雖然我洩露天機，災怯難免，但是我命中註定，就算我要冒天大的危險，我也要給你看個全像。</p>
+                            </li>
+                            <li>
+                                <span class="date">Oct 2<strong>2021</strong></span>
+                                <h3><a href="#">BBQ R2</a></h3>
+                                <p>每星期 VVV 是我們做市民的責任，而行善積德也是我本身的興趣，所以每個星期我都過路環一轉先安落，星期天和公眾假期也有做三四次的。</p>
+                            </li>
+                        </ul>
+                    </section>
+                </div>
+                <div class="col-4 col-12-medium">
+                    <section>
+                        <header>
+                            <h2>What's this all about?</h2>
+                        </header>
+                        <a href="#" class="image featured"><img
+                                src="https://scontent-hkg4-1.xx.fbcdn.net/v/t1.15752-9/244576823_196381095911086_1041064822261299049_n.png?_nc_cat=105&ccb=1-5&_nc_sid=ae9488&_nc_ohc=UDtTA1gJ3_oAX_yD7W7&_nc_ht=scontent-hkg4-1.xx&oh=8cd06a92317f24f0b47e7cf8093b8157&oe=6181B4E6"
+                                alt=""></a>
+                        <p>
+                            This is <strong>Seng Ma</strong> birthday & China's National Day
+                        </p>
+                        <footer>
+                            <ul class="actions">
+                                <li><a href="#" class="button">😍BONK his more😍</a></li>
+                            </ul>
+                        </footer>
+                    </section>
+                </div>
+
+
+                <div class="col-md-6 col-sm-12">
+                    <div class="address">
+                        <h2>馬上加入!</h2>
+                        <h5>自從跟團出車，天天舒根活絡，舒根活絡不求人。</h5>
+                        <address>
+                            Seifer.Tong
+                        </address>
+                        <div class="share-sec">
+                            <ul>
+                                <li>
+                                    <a href=""> <span class="fab fa-facebook"></span></a>
+                                </li>
+                                <li>
+                                    <a href=""> <span class="fab fa-instagram"></span></a>
+                                </li>
+                                <li>
+                                    <a href=""> <span class="fab fa-twitter"></span></a>
+                                </li>
+                                <li>
+                                    <a href=""> <span class="fab fa-pinterest"></span></a>
+                                </li>
+                                <li>
+                                    <a href=""> <span class="fab fa-google-plus-g"></span></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- <div class="col-4 col-6-medium col-12-small">
+                    <section>
+                        <header>
+                            <h2>Tempus consequat</h2>
+                        </header>
+                        <ul class="divided">
+                            <li><a href="#">Lorem ipsum dolor sit amet sit veroeros</a></li>
+                            <li><a href="#">Sed et blandit consequat sed tlorem blandit</a></li>
+                            <li><a href="#">Adipiscing feugiat phasellus sed tempus</a></li>
+                            <li><a href="#">Hendrerit tortor vitae mattis tempor sapien</a></li>
+                            <li><a href="#">Sem feugiat sapien id suscipit magna felis nec</a></li>
+                            <li><a href="#">Elit class aptent taciti sociosqu ad litora</a></li>
+                        </ul>
+                    </section>
+                </div>
+                <div class="col-4 col-6-medium col-12-small">
+                    <section>
+                        <header>
+                            <h2>Ipsum et phasellus</h2>
+                        </header>
+                        <ul class="divided">
+                            <li><a href="#">Lorem ipsum dolor sit amet sit veroeros</a></li>
+                            <li><a href="#">Sed et blandit consequat sed tlorem blandit</a></li>
+                            <li><a href="#">Adipiscing feugiat phasellus sed tempus</a></li>
+                            <li><a href="#">Hendrerit tortor vitae mattis tempor sapien</a></li>
+                            <li><a href="#">Sem feugiat sapien id suscipit magna felis nec</a></li>
+                            <li><a href="#">Elit class aptent taciti sociosqu ad litora</a></li>
+                        </ul>
+                    </section>
+                </div>
+                <div class="col-4 col-12-medium">
+                    <section>
+                        <header>
+                            <h2>Vitae tempor lorem</h2>
+                        </header>
+                        <ul class="social">
+                            <li><a class="icon brands fa-facebook-f" href="#"><span class="label">Facebook</span></a>
+                            </li>
+                            <li><a class="icon brands fa-twitter" href="#"><span class="label">Twitter</span></a></li>
+                            <li><a class="icon brands fa-dribbble" href="#"><span class="label">Dribbble</span></a></li>
+                            <li><a class="icon brands fa-tumblr" href="#"><span class="label">Tumblr</span></a></li>
+                            <li><a class="icon brands fa-linkedin-in" href="#"><span class="label">LinkedIn</span></a>
+                            </li>
+                        </ul>
+                        <ul class="contact">
+                            <li>
+                                <h3>Address</h3>
+                                <p>
+                                    Untitled Incorporated<br>
+                                    1234 Somewhere Road Suite<br>
+                                    Nashville, TN 00000-0000
+                                </p>
+                            </li>
+                            <li>
+                                <h3>Mail</h3>
+                                <p><a href="#">someone@untitled.tld</a></p>
+                            </li>
+                            <li>
+                                <h3>Phone</h3>
+                                <p>(800) 000-0000</p>
+                            </li>
+                        </ul>
+                    </section>
+                </div> -->
+
+
+                <div class="col-12">
+                    <!-- Copyright -->
+                    <footer>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-6 col-sm-6 ">
+                                    <img width="100 rem" src="images/vvvlogo.png" alt="sign">
+                                </div>
+                                <div class="col-md-6 col-sm-6">
+                                    <h6 class="right copy-right">Copyright &copy; 2021.Company Seifer.Tong All rights
+                                        reserved.</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </footer>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+    <!-- 
+    <section class="getin-sec" id="contact-sec">
+        <div class="cover"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-sm-12">
+                    <div class="form">
+                        <h3>Get in Touch With Me</h3>
+                        <form>
+                            <ul class="row">
+                                <li class="col-md-6">
+                                    <input type="text" placeholder="Your Name" required>
+                                </li>
+                                <li class="col-md-6">
+                                    <input type="email" placeholder="Your Email Id" required>
+                                </li>
+                                <li class="col-md-12">
+                                    <textarea placeholder="Your Message"></textarea>
+                                </li>
+                                <li class="col-md-12">
+                                    <button class="btn right">一鍵舉報</button>
+                                </li>
+                            </ul>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-12">
+                    <div class="address">
+                        <h2>馬上加入!</h2>
+                        <h5>自從跟團出車，天天舒根活絡，舒活絡不求人。</h5>
+                        <address>
+                            Seifer.Tong
+                        </address>
+                        <div class="share-sec">
+                            <ul>
+                                <li>
+                                    <a href=""> <span class="fab fa-facebook"></span></a>
+                                </li>
+                                <li>
+                                    <a href=""> <span class="fab fa-instagram"></span></a>
+                                </li>
+                                <li>
+                                    <a href=""> <span class="fab fa-twitter"></span></a>
+                                </li>
+                                <li>
+                                    <a href=""> <span class="fab fa-pinterest"></span></a>
+                                </li>
+                                <li>
+                                    <a href=""> <span class="fab fa-google-plus-g"></span></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js">
+    </script>
+    <script src="js/all.js"></script>
+    <script src="js/jquery.mixitup.min.js"></script>
+    <script type="text/javascript" src="js/jquery.prettyPhoto.js"></script>
+    <script type="text/javascript" src="js/jquery.isotope.js"></script>
+    <script src="js/jquery.bsPhotoGallery.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('ul.first').bsPhotoGallery({
+                "classes": "col-md-3 col-sm-4 col-2 ",
+                "hasModal": true,
+                // "fullHeight" : false
+            });
+        });
+    </script>
+    <!-- VVV Photo -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/nanogallery2@3/dist/css/nanogallery2.min.css" rel="stylesheet"
+        type="text/css">
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/nanogallery2@3/dist/jquery.nanogallery2.min.js"></script>
+    <!-- VVV Photo End -->
 </body>
 
 </html>
