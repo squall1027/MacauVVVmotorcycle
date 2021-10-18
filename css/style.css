@@ -1384,7 +1384,7 @@ button,
 	cursor: pointer;
 	border: 0;
 	border-radius: 5px;
-	background: #d52349;
+	background: #eD5565;
 	color: #fff !important;
 	font-weight: 700;
 	outline: 0;
@@ -1515,6 +1515,11 @@ button,
 
 		#footer a {
 			color: #c5c4c4;
+		}
+
+		.actions li .button {
+			border: none!important;
+			border-bottom: solid 5px #bf263c!important;
 		}
 
 		#footer h2, #footer h3, #footer h4, #footer h5, #footer h6, #footer strong, #footer b {
